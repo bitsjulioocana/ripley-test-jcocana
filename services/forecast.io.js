@@ -1,6 +1,6 @@
 const DarkSky = require('dark-sky');
 const client = require('../services/redis-client');
-const apiKey = process.env.API_KEY || 'b8c6f584e7b6ddd140a613ea3362fb8c';
+const apiKey = process.env.API_KEY || 'bd5dd32381c71017fc6363188f899927';
 const darkSky = new DarkSky(apiKey);
 
 const request = async (latitude, longitude) => {

@@ -1,10 +1,11 @@
 const express = require('express');
 const client = require('./services/redis-client');
+const path = require('path');
 
 const app = express();
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 app.get('/countries', (req, res) => {
