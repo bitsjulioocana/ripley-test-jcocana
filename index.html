@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    let request = () => {
+        socket.emit('request', {time: new Date().getTime()})
+    };
+    let response = (data) => {
+        console.log(data);
+    };
+    let socket = io('http://localhost:3000');
+    socket.on('response', response);
+
+    request();
+    setInterval(request, 10 * 1000)
+</script>
+</body>
+</html>
