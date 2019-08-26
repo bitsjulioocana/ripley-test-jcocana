@@ -29,12 +29,21 @@ npm run build
 npm start
 ```
 
-Ejecute la url http://localhost:3000 para ver su proyecto ejecutándose.
+Ejecute la url http://localhost:3000 en el navegador para ver su proyecto ejecutándose.
 
 Si todo fue correcto le aparecerá una pantalla como esta:
 ![](example.png)
 
+### Pruebas unitarias
+Para ejecutar las pruebas unitarias con las variablas de entorno por defecto:
+```
+npm run test
+```
+Para ejecutar las pruebas unitarias con otras variasbles:
+```
+env API_KEY=YOUR_KEY REDIS_URL=YOUR_REDIS npm run test
+```
+
+
 ### Ejemplo en ejecución
 https://ripley-test-jcocana.herokuapp.com/
-
- 

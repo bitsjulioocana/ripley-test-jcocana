@@ -6,23 +6,18 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "mocha"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "core-js": "^2.6.5",
     "dark-sky": "^1.1.5",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
     "moment": "^2.24.0",
-    "morgan": "~1.9.1",
     "redis": "^2.8.0",
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0",
     "vue": "^2.6.10",
-    "vue-socket.io": "^3.0.7",
     "vuetify": "^2.0.0"
   },
   "devDependencies": {
@@ -32,6 +27,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "mocha": "^6.2.0",
     "sass": "^1.17.4",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-vuetify": "^0.6.3",

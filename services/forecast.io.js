@@ -11,7 +11,6 @@ const request = async (latitude, longitude) => {
             return await darkSky.latitude(latitude).longitude(longitude).exclude('minutely,hourly,daily,alerts,flags').get();
         }
     } catch (e) {
-        console.log("Error: " + e.message);
         client.hmset("api.errors", new Date().getTime().toString(), e.stack);
         return await request(latitude, longitude);
     }
